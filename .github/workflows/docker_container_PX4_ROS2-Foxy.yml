@@ -9,10 +9,12 @@ on:
   push:
     branches:
       main
+    paths: 
+      - 'PX4_ROS2_Dockerfiles/PX4_ROS2-FOXY/Dockerfile_foxy'
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: PX4_ROS2-FOXY
 
 jobs:
   build-and-push-image:
