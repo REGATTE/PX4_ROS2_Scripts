@@ -14,7 +14,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: PX4_ROS2-FOXY
+  IMAGE_NAME: ${{ github.repository }}/px4ros2foxy
 
 jobs:
   build-and-push-image:
